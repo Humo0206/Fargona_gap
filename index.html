@@ -1,74 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fargona Gap Test</title>
+    <title>Fargona GAP</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background-color: #f0f0f0;
-            min-height: 100vh;
-        }
-        h1 {
-            color: #333;
-        }
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            width: 100%;
-            max-width: 300px;
-            margin-top: 20px;
-        }
-        button {
-            padding: 15px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .message {
-            margin-top: 20px;
-            font-size: 20px;
-            font-weight: bold;
-        }
+        body { font-family: sans-serif; text-align: center; padding: 20px; }
+        button { padding: 15px 30px; font-size: 18px; border: none; border-radius: 10px; background-color: #4285f4; color: white; margin: 10px; }
+        a { text-decoration: none; }
     </style>
 </head>
 <body>
-    <h1>To'g'risini toping!</h1>
-    <div class="buttons" id="buttonContainer"></div>
-    <div class="message" id="message"></div>
-
-    <script>
-        const container = document.getElementById("buttonContainer");
-        const message = document.getElementById("message");
-        const correct = Math.floor(Math.random() * 10) + 1;
-
-        for (let i = 1; i <= 10; i++) {
-            const btn = document.createElement("button");
-            btn.textContent = i;
-            btn.onclick = () => {
-                if (i === correct) {
-                    message.textContent = "To'g'ri topdingiz!";
-                    message.style.color = "green";
-                } else {
-                    message.textContent = "Xato! Yana urinib ko'ring.";
-                    message.style.color = "red";
-                }
-            };
-            container.appendChild(btn);
-        }
-    </script>
+    <h1>Yacheykalardan tanlang</h1>
+    <a href="pages/10.html"><button>10 ta yacheyka</button></a><br><br><a href="pages/9.html"><button>9 ta yacheyka</button></a><br><br><a href="pages/8.html"><button>8 ta yacheyka</button></a><br><br><a href="pages/7.html"><button>7 ta yacheyka</button></a><br><br><a href="pages/6.html"><button>6 ta yacheyka</button></a><br><br><a href="pages/5.html"><button>5 ta yacheyka</button></a><br><br><a href="pages/4.html"><button>4 ta yacheyka</button></a><br><br><a href="pages/3.html"><button>3 ta yacheyka</button></a><br><br><a href="pages/2.html"><button>2 ta yacheyka</button></a><br><br>
 </body>
 </html>
